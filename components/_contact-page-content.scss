@@ -1,0 +1,80 @@
+@use './variables';
+
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: variables.$creamy;
+
+    .container{
+        margin-top: 5rem;
+        background-color: #78290F;
+        width: 90%;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        border-radius: 5px;
+        margin-bottom: 2rem;
+
+        @media only screen and (max-width:450px) {
+            width: 100%;
+          }
+        h2{
+            margin-bottom: 3rem;
+            font-size: 55px;
+            font-weight: bold;
+        }
+        .main-content{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            
+
+            h3{
+                font-size: 40px;
+                margin-top: 1rem;
+                font-weight: bold;
+            }
+            .or{
+                margin-top: 3rem;
+                margin-bottom: 1rem;
+                font-size: 55px;
+            }
+            section{
+                h4{
+                    font-size: 25px;
+                    margin-bottom: 1rem;
+                    margin-top: 1rem;
+                }
+                p{
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+    .last-image {
+        background-image: url("../public/victoria-shes-Qa29U4Crvn4-unsplash.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        width: 100%;
+        height: 35vh;
+        margin-top: 8rem;
+        .last-image-container {
+         background-color: rgba(0, 0, 0, 0.6);
+         width: 100%;
+         height: 100%;
+         color: white;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         h2 {
+          font-size: 50px;
+        }
+       }
+      }
+}

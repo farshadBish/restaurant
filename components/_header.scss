@@ -1,0 +1,72 @@
+@use './variables';
+
+
+header {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .nav-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      @media only screen and (max-width:650px) {
+        flex-direction: column;
+      }
+
+      img {
+        padding-left: 6rem;
+        @media only screen and (max-width:650px) {
+          padding-left: 0;
+        }
+      }
+      nav {
+        padding-right: 4.5rem;
+        @media only screen and (max-width:650px) {
+          padding-right: 0;
+        }
+        a {
+          text-decoration: none;
+          padding-right: 1.5rem;
+          font-weight: bold;
+          color: black;
+          border-left: 1px black solid;
+          padding-left: 2rem;
+          padding-top: 0.3rem;
+          padding-bottom: 0.3rem;
+          transition-duration: 0.3s;
+
+          @media only screen and (max-width:800px) {
+            padding-right: 0.5rem;
+            padding-left: 1rem;
+          }
+          @media only screen and (max-width:650px) {
+            border-left: none;
+          }
+        }
+        a:hover {
+          background-color: variables.$orange;
+          transition-duration: 0.2s;
+        }
+      }
+    }
+    hr {
+      width: 90vw;
+    }
+    .bottom-navbar {
+      display: flex;
+      justify-content: flex-end;
+      width: 90vw;
+      padding-top: 1rem;
+      img {
+        padding-right: 0.5rem;
+      }
+      span {
+        padding-right: 2rem;
+        font-size: 15px;
+      }
+    }
+  }

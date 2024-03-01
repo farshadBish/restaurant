@@ -1,0 +1,12 @@
+@use '../components/header';
+@use '../components/footer';
+@use '../components/reserve-page-content';
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Dancing Script', cursive;
+}
+html{
+    min-height: 100vh;
+}

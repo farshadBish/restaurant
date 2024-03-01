@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/reserve.css">
+    <link rel="icon" href="./public/download.jpg">
+    <title>Shuka</title>
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <img src="./public/download.png" height="120" alt="logo">
+            <nav>
+                <a href="./index.html">Home</a>
+                <a href="./menu.html">Menu</a>
+                <a href="./reserve.html">Reserve</a>
+                <a href="./contact.html">Contact</a>
+                <a href="./spec.html">Site spec</a>
+            </nav>
+        </div>
+        <hr />
+        <div class="bottom-navbar">
+            <span>+32 999 99 99 99</span>
+            <img src="./public/facebook.svg" height="16" alt="facebook logo">
+            <img src="./public/instagram.svg" height="16" alt="instagram logo">
+        </div>
+    </header>
+    <main>
+        <section class="main-pic">
+            <div class="dark-theme">
+                <h3>All in good taste !</h3>
+                <div class="form-container">
+                    <h4>Table Reservation</h4>
+                    <form>
+                            <label>
+                                <span>Name</span>
+                                <input type="text" name="Name" id="Name" required>
+                            </label>
+                            <label>
+                                <span>Email</span>
+                                <input type="email" name="Email" id="Email" required>
+                            </label>
+                            <label>
+                                <span>Date</span>
+                                <input type="date" name="Date" id="Date" required>
+                            </label>
+                            <label>
+                                <span>Time</span>
+                                <input type="time" name="Time" id="Time" required>
+                            </label>
+                            <label>
+                                <span>Persons</span>
+                                <input type="number" min="1" max="20" name="Number" id="Persons" required>
+                            </label>
+                            <button>Reserve Now</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section class='top-side-footer'>
+            <article>
+                <b>Shuka</b>
+            </article>
+            <article class='middle-footer-content'>
+                <a href="">HOME</a>
+                <a href="">MENU</a>
+                <a href="/loginregister">RESERVE</a>
+                <a href="/privacy">CONTACT</a>
+                <a href="">SITE-SPEC</a>
+            </article>
+            <article class='text-muted'>
+                <img class='' src='./public/facebook.svg' alt="facebook" height='16' />
+                <img class='' src='./public/instagram.svg' alt="instagram" height='16' />
+            </article>
+        </section>
+        <hr class='horizontal-line' />
+        <h5 class='text-white-50'>@Copyright, All rights reserved</h5>
+    </footer>
+</body>
+</html>

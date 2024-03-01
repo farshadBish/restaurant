@@ -1,0 +1,118 @@
+@use './variables';
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 5rem;
+
+    .main-pic{
+        background-image: url('../public/behnam-norouzi-ZS2Aep4o58k-unsplash.jpg');
+        width: 90%;
+        height: 80vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 50%;
+        background-attachment: fixed;
+        border-radius: 5px;
+        margin-bottom: 2rem;
+
+        .dark-theme{
+            background-color: rgba(0, 0, 0, 0.5);
+            width: 100%;
+            height: 100%;
+            color: white;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            border-radius: 5px;
+            @media only screen and (max-width:760px) {
+                flex-direction: column;
+              }
+
+            h3{
+                font-size: 80px;
+                color: variables.$creamy;
+
+                @media only screen and (max-width:1030px) {
+                    font-size: 60px;
+                  }
+                  @media only screen and (max-width:870px) {
+                    font-size: 50px;
+                  }
+                  @media only screen and (max-width:416px) {
+                    font-size: 40px;
+                  }
+            }
+        }
+        .form-container{
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            padding: 2rem;
+            height: 27rem;
+            border-radius: 5px;
+            box-shadow: black 15px 15px 15px;
+            border-top: 8px solid variables.$creamy;
+            @media only screen and (max-width:870px) {
+                height: 25rem;
+              }
+
+            h4{
+                font-size: 25px;
+            }
+            form{
+                    label{
+                        display: flex;
+                        flex-direction: column;
+                        align-items:start;
+                        margin-top: 1rem;
+                        font-size: 20px;
+                        input{
+                            color: white;
+                              width: 15rem;
+                            padding-left:1rem;
+                            padding-top: 0.25rem;
+                            padding-bottom: 0.25rem;
+                            background-color: transparent;
+                            border: none;
+                            border-bottom: 1px variables.$border-color solid;
+                            font-size: 15px;
+                            @media only screen and (max-width:870px) {
+                                width: 13rem;
+                              }
+                              @media only screen and (max-width:416px) {
+                                width: 10rem;
+                              }
+                        }
+                    }
+
+                    button{
+                        background-color: variables.$creamy;
+                        color: rgb(255, 255, 255,0.9);
+                        border-radius: 3px;
+                        border: 0.5px variables.$border-color solid;
+                        border-left: none;
+                        border-right: none;
+                        font-size: 25px;
+                        padding: 0.3rem;
+                        margin-top: 1.5rem;
+                        color: black;
+                        font-weight: 700;
+                        cursor: pointer;
+                        transition-duration: 0.2s;
+                    }
+                    button:hover{
+                        transform: scale(1.15);
+                    }
+            }
+
+        }
+    }
+}
